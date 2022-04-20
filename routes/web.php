@@ -54,3 +54,13 @@ Route::post('/updateproduct/{id}', [AdminController::class,'updateproduct']);
 Route::get('/search', [HomeController::class,'search']);
 
 Route::post('/addcart/{id}', [HomeController::class,'addcart']);
+
+Route::get('/showcart', [HomeController::class,'showcart']);
+
+Route::get('/delete/{id}', [HomeController::class,'deletecart']);
+
+Route::post('/order', [HomeController::class,'confirmorder']);
+
+Route::get('/showorder', [AdminController::class,'showorder']);
+
+Route::get('/updatestatus/{id}', [AdminController::class,'updatestatus']);
